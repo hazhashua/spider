@@ -56,7 +56,7 @@ class Base:
         # //*[@id="quotesearch"]/ul[1], //*[@id="quotesearch"]/ul[1]/li[1]
         # print("..........", sh.text, "..............")
         sh_codes, sh_names = deal_data(sh)
-        if len(sh_codes)==len(sh_names)
+        if len(sh_codes)==len(sh_names):
             codes.extend(sh_codes)
             names.extend(sh_names)
 

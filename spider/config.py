@@ -3,6 +3,9 @@
 # 爬虫相关信息的网站
 # http://www.webxml.com.cn/zh_cn/web_services.aspx
 
+# 获取股票代码网站
+# http://quote.eastmoney.com/stock_list.html#sz
+
 # sina 返回股票数据格式
 # http://hq.sinajs.cn/list=sh601006
 """
@@ -36,6 +39,16 @@ var hq_str_sh601006="大秦铁路, 27.55, 27.25, 26.91, 27.55, 26.20, 26.91, 26.
 (22, 23), (24, 25), (26,27), (28, 29)分别为“卖二”至“卖四的情况”
 30：”2008-01-11″，日期；
 31：”15:05:32″，时间；
-
 """
 
+# 股票代码网站
+url = "http://quote.eastmoney.com/stock_list.html#sz"
+sh = '//*[@id="quotesearch"]/ul[1]'
+sz = '//*[@id="quotesearch"]/ul[2]'
+
+
+config = {
+    "driver_path": r"C:\Users\Administrator\Desktop\chromedriver_win32(2.34)\chromedriver.exe",
+    "stock_info": {"url": "http://quote.eastmoney.com/stock_list.html#sz", "sh": '//*[@id="quotesearch"]/ul[1]', "sz": '//*[@id="quotesearch"]/ul[2]'}
+
+}
